@@ -1,0 +1,295 @@
+@font-face {
+  font-family: 'Britannic Bold';
+  src: url('fonts/britannic-bold-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Tipografía personalizada para slogan e iconos */
+.frase-slogan,
+.frase-slogan *,
+.iconos-seccion,
+.iconos-seccion * {
+  font-family: 'Britannic Bold', Arial, sans-serif !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #fff;
+}
+
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 38px 8px 38px;
+  background: #fff;
+  width: 100vw;
+  box-sizing: border-box;
+  min-height: 120px;
+}
+
+.logo-seccion {
+  width: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo-img {
+  width: 175px;
+  height: 105px;
+  object-fit: contain;
+  margin-top: 0;
+}
+
+.frase-seccion {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  min-width: 360px;
+  max-width: 900px;
+}
+
+.frase-slogan {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.frase-slogan .azul {
+  color: #51b2c6;
+}
+
+.frase-slogan .azul-oscuro {
+  color: #2368b6;
+}
+
+.fe-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 6px;
+  position: relative;
+  top: 0;
+  min-width: 92px;
+}
+
+.confia {
+  color: #9d7dbc;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: -2px;
+  margin-top: 0;
+  line-height: 1;
+}
+
+.morado {
+  color: #65378b;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.creer-morado {
+  color: #65378b;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: -2px;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 1;
+}
+
+/* BOTÓN INICIAR SESIÓN */
+.btn-iniciar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0 10px 0 10px;
+  transition: transform 0.2s;
+}
+.btn-iniciar:hover {
+  transform: scale(1.05);
+}
+.icono-iniciar {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-bottom: -3px;
+}
+.btn-iniciar span {
+  color: #96bad2;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -3px;
+  line-height: 1;
+}
+.btn-iniciar small {
+  color: #51b2c6;
+  font-size: 11px;
+  font-weight: normal;
+}
+
+/* BOTÓN AYUDA */
+.btn-ayuda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0 10px 0 10px;
+  transition: transform 0.2s;
+}
+.btn-ayuda:hover {
+  transform: scale(1.05);
+}
+.icono-ayuda {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-bottom: -3px;
+}
+.btn-ayuda span {
+  color: #51b2c6;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -3px;
+  line-height: 1;
+}
+
+/* BOTÓN AVATAR */
+.btn-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0 10px 0 10px;
+  transition: transform 0.2s;
+}
+.btn-avatar:hover {
+  transform: scale(1.05);
+}
+.icono-avatar {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-bottom: -3px;
+}
+.btn-avatar span {
+  color: #65378b;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -3px;
+  line-height: 1;
+}
+
+.iconos-seccion {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  margin-top: 0;
+}
+
+/* Menú hamburguesa */
+.btn-hamburguesa {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 8px 0 0;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  outline: none;
+}
+
+.icono-hamburguesa {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Menú desplegable hamburguesa */
+.menu-desplegable {
+  position: absolute;
+  top: 70px;
+  left: 18px;
+  background: #fff;
+  box-shadow: x 4px 16px rgba(80, 80, 120, 0.13);
+  border-radius: 10px;
+  padding: 16px 0 10px 0;
+  min-width: 170px;
+  display: none;
+  z-index: 1000;
+  border: 1px solid #cbe4ee;
+}
+
+.menu-desplegable.activo {
+  display: block;
+  animation: fadeInMenu 0.2s;
+}
+
+@keyframes fadeInMenu {
+  from { opacity: 0; transform: translateY(-8px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.menu-desplegable ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-desplegable li {
+  margin: 0;
+  padding: 0;
+}
+.menu-desplegable a {
+  display: block;
+  padding: 10px 26px;
+  color: #2368b6;
+  text-decoration: none;
+  font-family: 'Britannic Bold', Arial, sans-serif;
+  font-size: 17px;
+  transition: background 0.15s, color 0.15s;
+}
+.menu-desplegable a:hover {
+  background: #51b2c61a;
+  color: #65378b;
+  border-radius: 6px;
+}
+
+.icono-hamburguesa{
+  padding: 40px;
+  margin: 25px;
+  border-radius: 30px;
+}
+
+
+
+
